@@ -14,7 +14,6 @@ public class Main {
                 FileReader fr = new FileReader(listfile);
                 BufferedReader br = new BufferedReader(fr);
 
-
                 Scanner sc = new Scanner(System.in);
 
                 System.out.println("'q' to quit");
