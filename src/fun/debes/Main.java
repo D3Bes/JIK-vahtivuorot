@@ -2,6 +2,7 @@ package fun.debes;
 
 import java.io.*;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
@@ -25,14 +26,15 @@ public class Main {
                 while ((s = br.readLine()) != null) {
                     if (s.contains(str)) {
                         String nextline = br.readLine();
-                        System.out.println(nextline);
-                        System.out.println(" ");
+                        System.out.println("'" + nextline + "'");
                     }
                 }
                 if(str.contains("q")) {
+                    System.out.println("Terminating...");
+                    TimeUnit.SECONDS.sleep(1);
                     break;
                 }
-            } catch (IOException e) {
+            } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
             }
         }
