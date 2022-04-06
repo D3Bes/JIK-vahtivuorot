@@ -24,7 +24,7 @@ public class Main {
 
         JSONObject vjo = (JSONObject) obj;
 
-
+        String confignull = "FATAL: Config is null!";
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter day: ");
@@ -44,7 +44,8 @@ public class Main {
             JSONArray array = (JSONArray) vjo.get("maanantai");
 
             if(array == null) {
-                System.out.println("FATAL: Array is null!");
+                System.out.println(confignull);
+                System.out.println("Terminating...");
                 break;
             }
 
@@ -75,7 +76,8 @@ public class Main {
             JSONArray array = (JSONArray) vjo.get("tiistai");
 
             if(array == null) {
-                System.out.println("FATAL: Array is null!");
+                System.out.println(confignull);
+                System.out.println("Terminating...");
                 break;
             }
 
@@ -106,7 +108,8 @@ public class Main {
             JSONArray array = (JSONArray) vjo.get("keskiviikko");
 
             if(array == null) {
-                System.out.println("FATAL: Array is null!");
+                System.out.println(confignull);
+                System.out.println("Terminating...");
                 break;
             }
 
@@ -137,7 +140,8 @@ public class Main {
                 JSONArray array = (JSONArray) vjo.get("torstai");
 
                 if(array == null) {
-                    System.out.println("FATAL: Array is null!");
+                    System.out.println(confignull);
+                    System.out.println("Terminating...");
                     break;
                 }
 
@@ -168,7 +172,8 @@ public class Main {
                 JSONArray array = (JSONArray) vjo.get("perjantai");
 
                 if(array == null) {
-                    System.out.println("FATAL: Array is null!");
+                    System.out.println(confignull);
+                    System.out.println("Terminating...");
                     break;
                 }
 
