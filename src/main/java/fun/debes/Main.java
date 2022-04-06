@@ -49,9 +49,9 @@ public class Main {
                 break;
             }
 
-            for(int i=0; i <array.size(); i++) {
+            for (Object o : array) {
 
-                JSONObject jsonobj = (JSONObject) array.get(i);
+                JSONObject jsonobj = (JSONObject) o;
 
                 String valvoja1 = (String) jsonobj.get("8.45");
                 String valvoja2 = (String) jsonobj.get("9.45");
@@ -81,9 +81,9 @@ public class Main {
                 break;
             }
 
-            for(int i=0; i <array.size(); i++) {
+            for (Object o : array) {
 
-                JSONObject jsonobj = (JSONObject) array.get(i);
+                JSONObject jsonobj = (JSONObject) o;
 
                 String valvoja1 = (String) jsonobj.get("8.45");
                 String valvoja2 = (String) jsonobj.get("9.45");
@@ -113,9 +113,9 @@ public class Main {
                 break;
             }
 
-            for(int i=0; i <array.size(); i++) {
+            for (Object o : array) {
 
-                JSONObject jsonobj = (JSONObject) array.get(i);
+                JSONObject jsonobj = (JSONObject) o;
 
                 String valvoja1 = (String) jsonobj.get("8.45");
                 String valvoja2 = (String) jsonobj.get("9.45");
@@ -131,7 +131,7 @@ public class Main {
                 System.out.println("11.00: " + valvoja4);
                 System.out.println("11.45: " + valvoja5);
                 System.out.println("12.00: " + valvoja6);
-                }
+            }
             }
             if (vkp.contains("to")) {
 
@@ -145,9 +145,9 @@ public class Main {
                     break;
                 }
 
-                for(int i=0; i <array.size(); i++) {
+                for (Object o : array) {
 
-                    JSONObject jsonobj = (JSONObject) array.get(i);
+                    JSONObject jsonobj = (JSONObject) o;
 
                     String valvoja1 = (String) jsonobj.get("8.45");
                     String valvoja2 = (String) jsonobj.get("9.45");
@@ -177,9 +177,9 @@ public class Main {
                     break;
                 }
 
-                for(int i=0; i <array.size(); i++) {
+                for (Object o : array) {
 
-                    JSONObject jsonobj = (JSONObject) array.get(i);
+                    JSONObject jsonobj = (JSONObject) o;
 
                     String valvoja1 = (String) jsonobj.get("8.45");
                     String valvoja2 = (String) jsonobj.get("9.45");
